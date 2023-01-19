@@ -1,0 +1,665 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #fff;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 2;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+    color: #000;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 33px;
+}
+a {
+    text-decoration: none !important;
+}
+ul, li {
+    margin:0;
+    padding:0;
+    font-family: 'Poppins';
+}
+li {
+    list-style-type: none;
+}
+.container {
+    max-width: 1139px;
+    margin: 0 auto;
+}
+.container-fluid {
+    max-width: 1770px;
+    margin: 0 auto;
+}
+.button {
+    background-color: #f4da55;
+    width: 219px;
+    line-height: 44px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: .2s all ease-in;
+    text-transform: uppercase;
+    box-shadow: 5px 10px 8px 0 #000;
+}
+.button:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+/*fonts*/
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Medium.woff2') format('woff2'),
+        url('../font/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Light.woff2') format('woff2'),
+        url('../font/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Bold.woff2') format('woff2'),
+        url('../font/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-ExtraBold.woff2') format('woff2'),
+        url('../font/Poppins-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-SemiBold.woff2') format('woff2'),
+        url('../font/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.woff2') format('woff2'),
+        url('../font/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../font/MyriadPro-Regular.woff2') format('woff2'),
+        url('../font/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../images/OpenSans-Bold.woff2') format('woff2'),
+        url('../images/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../images/OpenSans-Semibold.woff2') format('woff2'),
+        url('../images/OpenSans-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+/*----------------------------------------header starts here------------------------------------------------*/
+.header {
+    padding-top: 33px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+.nav-item .nav-link {
+    color: #f4da55;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+}
+.nav-item .nav-link:hover {
+    color: rgba(244, 218, 85, 0.9);
+}
+.nav-link.change:hover {
+    color: #86a4a2;
+}
+.nav-link.change {
+    color: #fff;
+}
+.navbar {
+    background-color: transparent !important;
+}
+.navbar-toggler {
+    border: 1px solid #fff;
+}
+.navbar-toggler-icon{
+    background-color: #fff;
+}
+/*banner*/
+.banner h1 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 29px;
+    padding-bottom: 23px;
+}
+.banner-span {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+    text-align:left;
+}
+.customer-review-a {
+    padding-bottom: 38px;
+    text-align: left;
+} 
+.customer-review-span {
+    color: #fff;
+}
+.banner .carousel-caption {
+    transform: translate(0, -60%);
+}
+.carousel-indicators [data-bs-target] {
+    width: 7px;
+    height: 7px;
+}
+/*-------------------------------how-work-row starts herev---------------------*/
+.how-work-row {
+    padding-top: 108px;
+    padding-bottom: 87px;
+}
+.how-work-row h2 {
+    padding-bottom: 27px;
+}
+.how-work-intro {
+    font-size: 23px;
+    line-height: 36px;
+    padding-bottom: 74px;
+}
+.how-work-intro-main {
+    margin: 0 auto;
+}
+.how-work-box-p {
+    font-size: 15px;
+    line-height: 22px;
+    padding-top: 48px;
+    padding-bottom: 20px;
+}
+/*--------------------------------crafted for your success----------------------------*/
+.crafted-for-success {
+    padding-top: 114px;
+    padding-bottom: 120px;
+    background-color: #eee;
+}
+.crafted-for-intro {
+    margin: 0 auto;
+}
+.crafted-for-success h2 {
+    font-size: 35px;
+    line-height: 29px;
+    padding-bottom: 19px;
+}
+.crafted-for-intro {
+    max-width: 695px;
+}
+.crafted-for-success p {
+    font-size: 23px;
+    font-family: 'Myriad Pro';
+    color: #333;
+    line-height: 36px;
+    padding-bottom: 73px;
+}
+.crafted-for-thmbnail {
+    padding: 0 !important;
+}
+/*--------------------------------------------real-review-row------------------------------*/
+.real-review-row {
+    padding-top: 112px;
+    padding-bottom: 94px;
+}
+.real-review-row h2 {
+    line-height: 29px;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 65px;
+}
+.real-review-inner {
+    background-color: #eee;
+    text-align: center;
+}
+.real-review-inner img {
+    padding-top: 21px;
+}
+.real-review-inner h3 {
+    font-size: 20px;
+    line-height: 29px;
+}
+.real-review-row span {
+    padding-bottom: 33px;
+    display: flex;
+    justify-content: center;
+}
+.real-review-row .carousel-control-next {
+    left: -250px;
+}
+.real-review-row .carousel-control-next-icon {
+    background-image: url('../images/reviews-left-slider.png');
+}
+.real-review-row .carousel-control-prev-icon {
+    background-image: url('../images/reviews-right-slider.png');
+}
+.real-review-row .carousel-control-prev {
+    right: -156px;
+    left: initial;
+}
+.real-review-row p {
+    font-size: 20px;
+    line-height: 35px;
+    padding-top: 103px;
+}
+.real-review-row p:before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/reviews-before-quote.png');
+    width: 100%;
+}
+.real-review-row .carousel-indicators {
+    right: -253px;
+    left: initial;
+}
+.real-review-row .carousel-indicators [data-bs-target] {
+    background-color: #ccc;
+    width: 16px;
+    height: 14px;
+}
+/*----------------------------------------------daily structure start here-------------------*/
+.daily-structure-row {
+    background: url('../images/daily-structure.png') no-repeat;
+    padding-top: 94px;
+    position: relative;
+    background-size: contain;
+}
+.daily-structure-row::after {
+    background-color: #eee;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.daily-structure-row h2 {
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 500;
+}
+.daily-structure-row p {
+    font-size: 20px;
+    line-height: 35px;
+    color: #000;
+}
+.daily-structure-inner p:nth-child(2) {
+    padding-top: 45px;
+    padding-bottom: 33px;
+}
+.daily-structure-inner p:last-child {
+    padding-bottom: 54px;
+}
+/*-----------------------------------------------take-look-row-----------------------------*/
+.take-look-row {
+    padding-top: 103px;
+    padding-bottom: 53px;
+}
+.take-look-row .col-sm-12 {
+    margin: 0 auto;
+}
+.take-look-row .black-book-h2 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 29px;
+    padding-bottom: 38px;
+}
+.take-look-row p {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #333;
+    padding-bottom: 43px;
+}
+.take-look-row .btn.btn-primary.btn-lg {
+    border-radius: initial;
+    border: 1px solid transparent;
+    background-color: #3b454d;
+    padding-left: 39px;
+    padding-right: 39px;
+    transition: .2s all ease-in;
+    line-height: 42px;
+}
+.take-look-row .btn.btn-primary.btn-lg:hover {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+/*--------------------------------------------------book-video-row--------------------------*/
+.book-video-row {
+    background-color: #eee;
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+.book-video-row iframe {
+    width: 100%;
+}
+/*--------------------------------------black-journal-sale-----------------------------*/
+.black-journal-sale {
+    padding-top: 121px;
+    padding-bottom: 82px;
+}
+.black-journal-sale h2 {
+    padding-bottom: 28px;
+}
+.btn.btn-danger {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+.black-journal-sale .list-group {
+    padding-top: 27px;
+}
+.black-journal-sale .list-group-item {
+    border: 1px solid transparent;
+}
+.form-check-input[type=checkbox] {
+    border-radius: 20.25em;
+}
+.black-journal-sale li {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+}
+.black-journal-sale .customer-review-span {
+    color: #000;
+    display: block;
+}
+.black-journal-sale .customer-review-a {
+    padding-bottom: 61px;
+    padding-top: 37px;
+    display: block;
+}
+.black-journal-sale .btn.btn-primary.btn-lg {
+    display: block;
+    background-color: #f4da55;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    transition: .2s all ease-in;
+    width: 360px;
+    color: #000;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: initial;
+    box-shadow: 5px 10px 8px 0 #888;
+}
+.black-journal-sale .btn.btn-primary.btn-lg:hover {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+.column-left {
+    padding-bottom: 74px;
+}
+.black-journal-sale img {
+    height: 100%;
+}
+.black-journal-sale .btn.btn-danger.dropdown-toggle {
+    width: 70px;
+}
+.dropdown-toggle::after {
+    margin-left: 33px;
+}
+/*------------------------------------------book-everyday-life----------------------------------*/
+.book-everyday-life {
+    background-color: #eee;
+    padding-top: 79px;
+    padding-bottom: 89px;
+}
+.book-everyday-life p {
+    font-size: 23px;
+    line-height: 39px;
+}
+/*-------------------------------------related-product-row-------------------------------------*/
+.related-product-row {
+    padding-top: 101px;
+    padding-bottom: 119px;
+}
+.related-product-row h2 {
+    text-align: center;
+    padding-bottom: 35px;
+}
+.related-product-row h5 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+}
+.related-product-row p {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    padding-bottom: 16px;
+    padding-top: 18px;
+}
+.related-product-row .card {
+    border: initial;
+    margin-top: 40px;
+}
+.related-product-row .card img {
+    border-radius: 4px;
+}
+.related-product-row .btn.btn-primary {
+    background-color: #f4da55;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 29px;
+    border-radius: initial;
+    border: 1px solid transparent;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: .2s all ease-in;
+}
+.related-product-row .btn.btn-primary:hover {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+/*-----------------------------------------follow-us-row---------------------------------------*/
+.follow-us-row {
+    background: url('../images/instagram-bg.png') no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 53px;
+}
+.follow-us-row h2 {
+    font-size: 40px;
+    color: #fff;
+}
+.follow-us-row a {
+    background-color: #f4da55;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    padding: 5px 37px;
+    transition: .2s all ease-in;
+    border: 1px solid transparent;
+}
+.follow-us-row a:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+/*------------------------------------------footer starts here--------------------------------------*/
+.footer {
+    padding-top: 62px;
+    padding-bottom: 71px;
+}
+.secondary-column {
+    padding-top: 29px;
+}
+.footer p {
+    font-size: 17px;
+    padding-top: 28px;
+}
+.footer h3 {
+    font-size: 25px;
+}
+.footer ul {
+    padding-top: 12px;
+}
+.footer a {
+    color: #000;
+    line-height: 33px;
+    font-size: 16px;
+}
+.secondary-column {
+    padding-top: 53px;
+}
+.footer .input-group {
+    padding-top: 13px;
+    padding-bottom: 20px;
+}
+.footer .span-footer i {
+    transform: rotate(50deg);
+}
+/*slider*/
+.carousel-item {
+    transition: .6s all ease-in;
+}
+@media (max-width:1500px) {
+    .daily-structure-row {
+        position: initial;
+        background-size: cover;
+    }
+    .real-review-row .carousel-control-prev{
+        display: none !important;
+    }
+    .carousel-indicators {
+        right: initial !important; 
+        bottom: -68px;
+    }
+    .daily-structure-inner {
+        margin-left: initial;
+    }
+}
+@media (max-width:1200px) {
+    .daily-structure-row h2 {
+        color: #fff;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .daily-structure-inner p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+@media (max-width:992px) {
+    .header {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .real-review-row .carousel-control-prev {
+        display: none;
+    }
+    .real-review-row .carousel-indicators {
+        display: none;
+    }
+    .navbar-nav {
+        background-color: #fff;
+        border-radius: 7px;
+    }
+    .nav-link { 
+        color: #000 !important;
+        padding-left: 20px;
+    }
+}
+@media (max-width:767px) {
+    .banner h1 {
+        font-size: 28px;
+    }
+    .banner-span {
+        font-size: 17px;
+    }
+    .button {
+        width: 151px;
+    }
+    .how-work-row h2 {
+        padding-bottom: 19px
+    }
+    .how-work-intro {
+        font-size: 19px;
+        padding-bottom: 50px;
+    }
+    .real-review-row h2 {
+        line-height: 35px;
+    }
+    .take-look-row .black-book-h2 {
+        font-size: 30px;
+    }
+    .take-look-row p {
+        font-size: 16px;
+        line-height: 32px;
+        padding-bottom: 19px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+    .carousel-control-prev {
+        bottom: -610px;
+        left: 60px;
+    }
+    .carousel-control-next {
+        right: 65px;
+        bottom: -610px;
+    }
+    .crafted-for-success h2 {
+        line-height: 35px;
+    }
+    .book-everyday-life p {
+        font-size: 16px;
+        line-height: 35px;
+    }
+} 
